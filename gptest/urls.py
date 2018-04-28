@@ -21,5 +21,6 @@ from gptest.views import IndexPageView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'', IndexPageView.as_view()),
     url(r'^(?P<url>\w+)', IndexPageView.as_view()),
 ]
